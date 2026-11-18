@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>قُم: منبّه الفجر الذي يتوقّف حين تتلو آية</title>
+<meta name="description" content="«قُم» منبّه مجّاني لصلاة الفجر على iPhone: يعرف وقت الفجر في مدينتك، ويرنّ في الوقت الذي تختاره، ولا يتوقّف حتى تتلو آية الصباح بصوتك.">
+<meta name="theme-color" content="#090d20">
+<meta property="og:title" content="قُم: منبّه الفجر">
+<meta property="og:description" content="منبّه لصلاة الفجر لا يتوقّف حتى تتلو آية الصباح بصوتك. مجّاني، بلا إعلانات ولا حسابات.">
+<meta property="og:image" content="https://aalibrahim.github.io/qum/assets/icon-512.png">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ar_AR">
+<link rel="icon" href="assets/icon-180.png">
+<link rel="apple-touch-icon" href="assets/icon-180.png">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<div class="sky" aria-hidden="true"></div>
+<canvas id="stars" aria-hidden="true"></canvas>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top"><img src="assets/icon-180.png" alt="" width="32" height="32"><span>قُم</span></a>
+    <nav>
+      <a class="hide" href="#how">كيف يعمل</a>
+      <a class="hide" href="#moon">قمر المواظبة</a>
+      <a href="#privacy">الخصوصية</a>
+      <a href="support.html">الدعم</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <p class="kicker">منبّه الفجر على iPhone</p>
+      <h1>قُم</h1>
+      <p class="lead">منبّه لا يتوقّف حتى تتلو آية الصباح بصوتك.</p>
+      <p class="sub">يعرف «قُم» وقت الفجر في مدينتك، ويوقظك في الوقت الذي تختاره. وحين تتلو الآية بصوت مسموع تكون قد استيقظت حقًّا، ويصبح القيام أقرب.</p>
+      <div class="cta">
+        <span class="pill gold">قريبًا على App Store <small>مجّانًا</small></span>
+        <a class="pill ghost" href="#how">كيف يعمل؟</a>
+      </div>
+      <ul class="badges">
+        <li>مجّاني غير ربحي</li><li>بلا إعلانات</li><li>بلا حسابات</li><li>التلاوة تبقى على هاتفك</li>
+      </ul>
+    </div>
+    <div class="stage">
+      <svg class="bigmoon" viewBox="0 0 100 100" aria-hidden="true">
+        <circle cx="50" cy="50" r="46" fill="rgba(255,255,255,.07)"/>
+        <path id="heroMoon" fill="#ecc978"/>
+      </svg>
+      <div class="phone tilt"><img src="assets/home.webp" width="660" height="1435" alt="الشاشة الرئيسية في «قُم»: موعد الإيقاظ ووقتا الفجر والشروق"></div>
+    </div>
+  </div>
+</section>
+
+<section id="how">
+  <div class="wrap">
+    <div class="center reveal">
+      <h2>ثلاث خطوات بينك وبين <em>صلاة الفجر</em></h2>
+      <p class="intro">أصعب ما في الفجر هو اللحظة الأولى. «قُم» صُمّم لتلك اللحظة وحدها.</p>
+    </div>
+    <div class="steps">
+      <article class="step reveal">
+        <div class="n">١</div>
+        <h3>يعرف وقت فجرك</h3>
+        <p>يحسب الفجر والشروق لمدينتك كل يوم بطريقة الحساب المتّبعة في بلدك، وتختار أنت متى توقَظ.</p>
+        <div class="phone"><img loading="lazy" src="assets/slider.webp" width="660" height="1435" alt="اختيار وقت الإيقاظ بين الفجر والشروق"></div>
+      </article>
+      <article class="step reveal">
+        <div class="n">٢</div>
+        <h3>يرنّ منبّهًا حقيقيًّا</h3>
+        <p>منبّه من منبّهات النظام، يُسمع حتى لو كان الهاتف صامتًا أو في وضع التركيز، ومعه آية تحثّك على القيام.</p>
+        <div class="phone"><img loading="lazy" src="assets/alarm.webp" width="660" height="1435" alt="شاشة المنبّه وعليها آية الصباح"></div>
+      </article>
+      <article class="step reveal">
+        <div class="n">٣</div>
+        <h3>تتلو فيتوقّف</h3>
+        <p>تضيء الكلمات واحدة بعد أخرى كلما سمعها الهاتف، ويتوقّف المنبّه حين تكتمل الآية.</p>
+        <div class="phone"><img loading="lazy" src="assets/reciting.webp" width="660" height="1435" alt="كلمات الآية تضيء أثناء التلاوة"></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="verse">
+  <div class="wrap">
+    <div class="center reveal">
+      <h2>آية كل صباح، <em>تضيء بتلاوتك</em></h2>
+      <p class="intro">٢٦ آية ومقطعًا مختارًا، كلّها تحثّ على القيام. جرّب هنا كيف يبدو ذلك؛ في التطبيق يضيئها صوتك أنت.</p>
+    </div>
+    <div class="versebox reveal">
+      <p class="verse" id="verseLine" lang="ar"><!--VERSE--><span>أَقِمِ</span> <span>ٱلصَّلَوٰةَ</span> <span>لِدُلُوكِ</span> <span>ٱلشَّمْسِ</span> <span>إِلَىٰ</span> <span>غَسَقِ</span> <span>ٱلَّيْلِ</span> <span>وَقُرْءَانَ</span> <span>ٱلْفَجْرِ ۖ</span> <span>إِنَّ</span> <span>قُرْءَانَ</span> <span>ٱلْفَجْرِ</span> <span>كَانَ</span> <span>مَشْهُودًۭا</span><!--/VERSE--></p>
+      <p class="ref"><!--REF-->سُورَةُ الإِسۡرَاءِ · ٧٨<!--/REF--></p>
+      <p class="heard" id="heard" aria-live="polite">&nbsp;</p>
+      <button class="pill gold mic" id="play" type="button">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 15a3.5 3.5 0 0 0 3.5-3.5v-6a3.5 3.5 0 1 0-7 0v6A3.5 3.5 0 0 0 12 15Zm6.5-3.5a1 1 0 1 0-2 0 4.5 4.5 0 0 1-9 0 1 1 0 1 0-2 0 6.5 6.5 0 0 0 5.5 6.42V20.5H8.5a1 1 0 1 0 0 2h7a1 1 0 1 0 0-2H13v-2.58a6.5 6.5 0 0 0 5.5-6.42Z"/></svg>
+        <span id="playLabel">ابدأ التلاوة</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<section id="time">
+  <div class="wrap">
+    <div class="center reveal">
+      <h2>أنت تختار <em>متى توقَظ</em></h2>
+      <p class="intro">من نصف ساعة قبل الفجر إلى ربع ساعة قبل الشروق. حرّك المؤشّر.</p>
+    </div>
+    <div class="dial reveal">
+      <div class="time" id="dialTime" dir="ltr">٤:٥٨</div>
+      <div class="rel" id="dialRel">مع أذان الفجر</div>
+      <input id="dial" type="range" min="-30" max="64" step="1" value="0" aria-label="وقت الإيقاظ">
+      <div class="ends"><span>قبل الفجر بنصف ساعة</span><span>قبل الشروق بربع ساعة</span></div>
+      <p class="eg">مثال توضيحي: الفجر ٤:٥٨ والشروق ٦:١٧. في التطبيق تُحسب الأوقات لمدينتك كل يوم.</p>
+    </div>
+  </div>
+</section>
+
+<section id="moon">
+  <div class="wrap split">
+    <div class="reveal">
+      <h2>قمرٌ <em>يكتمل بمواظبتك</em></h2>
+      <p class="intro">كل صباح تقوم فيه يزيد قمرك نورًا: هلال رقيق بعد اليوم الأول، وبدر كامل بعد أربعة عشر يومًا متتاليًا. ويعرض «قُم» عدد أيامك المتتالية، وكم تستغرق من الرنين إلى إتمام التلاوة.</p>
+      <div class="moons" id="moons" aria-hidden="true"></div>
+      <p class="count center" id="moonCount">&nbsp;</p>
+    </div>
+    <div class="phone reveal" style="width:min(16rem,70vw)"><img loading="lazy" src="assets/streak.webp" width="660" height="1435" alt="بطاقة المواظبة وفيها القمر وعدد الأيام المتتالية"></div>
+  </div>
+</section>
+
+<section id="more">
+  <div class="wrap">
+    <div class="center reveal">
+      <h2>مصنوع بعناية، <em>لغرض واحد</em></h2>
+    </div>
+    <div class="grid">
+      <div class="cell reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.1 7-11.5A7 7 0 0 0 5 9.5C5 14.9 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+        <h3>مواقيت لمدينتك</h3>
+        <p>يحدّد مدينتك من موقعك، أو تختارها من القائمة. ويمكنك تغيير طريقة الحساب أو تعديل الفجر بالدقائق ليوافق تقويم مسجدك.</p>
+      </div>
+      <div class="cell reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 16V11a6 6 0 1 1 12 0v5l1.5 2h-15L6 16Z"/><path d="M10 21h4"/></svg>
+        <h3>لا تفتحه كل ليلة</h3>
+        <p>يجدول منبّهات الأيام القادمة مسبقًا، ويعدّلها مع تغيّر وقت الفجر يومًا بعد يوم.</p>
+      </div>
+      <div class="cell reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12c2.5-3 5-3 8 0s5.500 3 8 0"/><path d="M4 7c2.500-3 5-3 8 0s5.500 3 8 0"/><path d="M4 17c2.500-3 5-3 8 0s5.500 3 8 0"/></svg>
+        <h3>يتسامح مع التلاوة</h3>
+        <p>نموذج مخصّص لتلاوة القرآن الكريم يعمل على هاتفك. يكفي أن تقرأ الآية كاملة بصوت واضح، ولو على مهل.</p>
+      </div>
+      <div class="cell reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6.500" width="18" height="13" rx="3"/><circle cx="12" cy="13" r="3.200"/><path d="M8.500 6.500 10 4h4l1.500 2.500"/></svg>
+        <h3>سجّادتك عند الحاجة</h3>
+        <p>إن تعذّرت التلاوة بعد ثلاث محاولات، لبحّة في الصوت مثلًا، يتوقّف المنبّه بتصوير سجّادة صلاتك.</p>
+      </div>
+      <div class="cell reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 5h10a4 4 0 0 1 4 4v10H9a4 4 0 0 1-4-4V5Z"/><path d="M9 10h6M9 14h4"/></svg>
+        <h3>ثبّت آيتك</h3>
+        <p>تتبدّل الآية كل صباح، ويمكنك تثبيت آية واحدة إن أحببت أن تبدأ بها كل يوم.</p>
+      </div>
+      <div class="cell reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4.500 6v5.500c0 4.500 3.200 8 7.500 9.500 4.300-1.500 7.500-5 7.500-9.500V6L12 3Z"/><path d="m9 12 2.200 2.200L15.200 10"/></svg>
+        <h3>مجّاني تمامًا</h3>
+        <p>لا اشتراكات ولا مشتريات ولا إعلانات. تطبيق غير ربحي يطوّره مطوّر واحد.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="honest">
+  <div class="wrap">
+    <div class="honest reveal">
+      <h2>بصراحة</h2>
+      <p>يسمح iOS لأي أحد بإسكات رنّة واحدة من شاشة القفل، ولا يستطيع أي تطبيق منع ذلك. لذلك يعيد «قُم» الرنين كل ثلاث دقائق، حتى ثماني مرات، إلى أن تتلو الآية.</p>
+    </div>
+  </div>
+</section>
+
+<section id="privacy">
+  <div class="wrap">
+    <div class="center reveal">
+      <h2>خصوصيتك <em>ليست موضع تفاوض</em></h2>
+      <p class="intro">«قُم» ليس له خادم، ولا يجمع أي بيانات عنك.</p>
+    </div>
+    <div class="grid">
+      <div class="cell reveal"><h3>صوتك على هاتفك</h3><p>يجري التعرّف على التلاوة على الهاتف نفسه، ولا يُحفظ أي تسجيل. وإن تعذّر تشغيل النموذج، يستأذنك التطبيق قبل استخدام التعرّف على الكلام من Apple.</p></div>
+      <div class="cell reveal"><h3>موقعك وصورتك عندك</h3><p>يُحفظ موقعك وصورة سجّادتك على هاتفك فقط. لمعرفة اسم المدينة تُرسَل الإحداثيات إلى خرائط Apple، ويمكنك اختيار المدينة يدويًّا بدلًا من ذلك.</p></div>
+      <div class="cell reveal"><h3>لا شيء يتتبّعك</h3><p>بلا حسابات، ولا إعلانات، ولا أدوات تحليل. وهذه الصفحة كذلك لا تحمّل أي شيء من طرف ثالث.</p></div>
+    </div>
+    <p class="center reveal" style="margin-top:1.6rem"><a href="privacy.html">اقرأ سياسة الخصوصية كاملة</a></p>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap narrow">
+    <h2 class="reveal">أسئلة شائعة</h2>
+    <details class="reveal"><summary>هل يجب أن أكون حافظًا أو مجوّدًا؟</summary><p>لا. الآية مكتوبة أمامك على الشاشة، ويكفي أن تقرأها كاملة بصوت واضح. يتسامح «قُم» مع الأخطاء اليسيرة ومع القراءة المتمهّلة.</p></details>
+    <details class="reveal"><summary>ماذا لو لم أستطع التلاوة؟</summary><p>بعد ثلاث محاولات يمكنك إيقاف المنبّه بتصوير سجّادة صلاتك التي حفظت صورتها في التطبيق. وإن لم تحفظ صورة، يظهر بعد محاولات أكثر زرّ يتوقّف به المنبّه بالضغط المطوّل نصف دقيقة.</p></details>
+    <details class="reveal"><summary>هل يرنّ والهاتف صامت؟</summary><p>نعم. يرنّ «قُم» منبّهًا من منبّهات النظام، فيُسمع في الوضع الصامت وفي وضع التركيز.</p></details>
+    <details class="reveal"><summary>وقت الفجر لا يطابق تقويم مسجدي، ما العمل؟</summary><p>من الإعدادات اختر طريقة الحساب المتّبعة في بلدك، أو عدّل وقت الفجر بالدقائق حتى يطابق تقويم مسجدك.</p></details>
+    <details class="reveal"><summary>ما الأجهزة المدعومة؟</summary><p>iPhone بنظام iOS 26.1 أو أحدث. الواجهة بالعربية فقط حاليًّا.</p></details>
+    <details class="reveal"><summary>لماذا هو مجّاني؟</summary><p>لأنه مشروع غير ربحي. لا إعلانات فيه ولا اشتراكات ولا مشتريات.</p></details>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap reveal">
+    <h2 lang="ar"><!--CLOSING-->قُمِ ٱلَّيْلَ إِلَّا قَلِيلًۭا<!--/CLOSING--></h2>
+    <p><!--CLOSINGREF-->سُورَةُ المُزَّمِّلِ · ٢<!--/CLOSINGREF--></p>
+    <div class="cta">
+      <span class="pill gold">قريبًا على App Store <small>مجّانًا</small></span>
+      <a class="pill ghost" href="support.html">الدعم والتواصل</a>
+    </div>
+  </div>
+</section>
+
+<section class="en" lang="en" dir="ltr">
+  <div class="wrap narrow">
+    <h2>Qum, a Fajr alarm that stops when you recite</h2>
+    <p>Qum («قُم», “Arise”) is a free, not-for-profit iPhone alarm for Fajr, the dawn prayer. It works out Fajr for your city, rings at the time you choose between 30 minutes before Fajr and 15 minutes before sunrise, and stops when you recite the morning’s Quran verse aloud. Recitation is recognised on the phone; nothing is recorded.</p>
+    <p>No accounts, no ads, no analytics. The interface is Arabic only for now. Requires iOS 26.1 or later. <a href="privacy.html">Privacy policy</a> · <a href="support.html">Support</a></p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <p><strong>قُم</strong> · منبّه الفجر · تطبيق مجّاني غير ربحي</p>
+      <p>نصّ القرآن الكريم من <a href="https://tanzil.net" rel="noopener">مشروع تنزيل</a>، منقول حرفيًّا دون تغيير، ويُعرض بخطّ أميري قرآن.</p>
+      <p>التعرّف على التلاوة بنموذج Tarteel المفتوح، ومواقيت الصلاة بمكتبة Adhan.</p>
+    </div>
+    <nav>
+      <a href="privacy.html">سياسة الخصوصية</a>
+      <a href="support.html">الدعم</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var root = document.documentElement;
+  var AR = '٠١٢٣٤٥٦٧٨٩';
+  function ar(n){ return String(n).replace(/\d/g, function(d){ return AR[d]; }); }
+
+  // A waxing moon lit on the right. f = 0 (new) … 1 (full).
+  function moonPath(f, c, r){
+    f = Math.max(0.02, Math.min(1, f));
+    var rx = Math.abs(1 - 2 * f) * r;
+    return 'M' + c + ' ' + (c - r) + ' A' + r + ' ' + r + ' 0 0 1 ' + c + ' ' + (c + r) +
+           ' A' + rx.toFixed(2) + ' ' + r + ' 0 0 ' + (f < 0.5 ? 0 : 1) + ' ' + c + ' ' + (c - r) + 'Z';
+  }
+
+  // Sky and hero moon follow the scroll: night at the top, dawn at the bottom.
+  var heroMoon = document.getElementById('heroMoon');
+  function onScroll(){
+    var max = Math.max(1, document.documentElement.scrollHeight - innerHeight);
+    var p = Math.min(1, Math.max(0, scrollY / max));
+    root.style.setProperty('--p', p.toFixed(3));
+    heroMoon.setAttribute('d', moonPath(0.14 + Math.min(1, scrollY / (innerHeight * 0.9)) * 0.86, 50, 46));
+  }
+  addEventListener('scroll', onScroll, {passive:true});
+  addEventListener('resize', onScroll);
+  onScroll();
+
+  // Stars
+  var cv = document.getElementById('stars'), ctx = cv.getContext('2d'), stars = [];
+  function sizeStars(){
+    var d = Math.min(2, devicePixelRatio || 1);
+    cv.width = innerWidth * d; cv.height = innerHeight * d;
+    stars = [];
+    var n = Math.round(innerWidth * innerHeight / 7000);
+    for (var i = 0; i < n; i++) stars.push({x:Math.random()*cv.width, y:Math.random()*cv.height*0.85, r:(Math.random()*1.1+0.3)*d, a:Math.random()*0.6+0.25, s:Math.random()*0.0016+0.0004, o:Math.random()*6.28});
+    drawStars(0);
+  }
+  function drawStars(t){
+    ctx.clearRect(0,0,cv.width,cv.height);
+    for (var i = 0; i < stars.length; i++){
+      var s = stars[i];
+      ctx.globalAlpha = reduce ? s.a : s.a * (0.6 + 0.4 * Math.sin(t * s.s + s.o));
+      ctx.fillStyle = '#fff';
+      ctx.beginPath(); ctx.arc(s.x, s.y, s.r, 0, 6.283); ctx.fill();
+    }
+  }
+  sizeStars();
+  var resizeTimer; addEventListener('resize', function(){ clearTimeout(resizeTimer); resizeTimer = setTimeout(sizeStars, 150); });
+  if (!reduce) (function loop(t){ drawStars(t); requestAnimationFrame(loop); })(0);
+
+  // Reveal on scroll
+  var io = new IntersectionObserver(function(es){ es.forEach(function(e){ if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } }); }, {threshold:0.12});
+  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+
+  // Verse: words light up as if being recited.
+  var words = [].slice.call(document.querySelectorAll('#verseLine span'));
+  var heard = document.getElementById('heard'), play = document.getElementById('play'), label = document.getElementById('playLabel');
+  var timer = null, playing = false;
+  function stop(){ clearTimeout(timer); playing = false; label.textContent = 'ابدأ التلاوة'; reset(); }
+  function reset(){ words.forEach(function(w){ w.classList.remove('on'); }); heard.className = 'heard'; heard.innerHTML = '&nbsp;'; }
+  function recite(){
+    clearTimeout(timer); reset();
+    playing = true; label.textContent = 'إيقاف';
+    var i = 0;
+    (function next(){
+      if (i < words.length){
+        words[i].classList.add('on'); i++;
+        heard.textContent = 'سمعتُ ' + ar(i) + ' من ' + ar(words.length);
+        timer = setTimeout(next, reduce ? 0 : 520 + Math.random() * 260);
+      } else {
+        heard.textContent = 'تقبّل الله منك. توقّف المنبّه.'; heard.className = 'heard done';
+        label.textContent = 'أعد التجربة'; playing = false;
+      }
+    })();
+  }
+  play.addEventListener('click', function(){ if (playing) stop(); else recite(); });
+  var once = new IntersectionObserver(function(es){ if (es[0].isIntersecting){ once.disconnect(); recite(); } }, {threshold:0.6});
+  once.observe(document.getElementById('verseLine'));
+
+  // Wake-time dial. Example times only: Fajr 4:58, sunrise 6:17.
+  var FAJR = 4 * 60 + 58, SUNRISE = 6 * 60 + 17;
+  var dial = document.getElementById('dial'), dialTime = document.getElementById('dialTime'), dialRel = document.getElementById('dialRel');
+  dial.max = SUNRISE - 15 - FAJR;
+  function minutes(n){
+    if (n === 1) return 'دقيقة واحدة';
+    if (n === 2) return 'دقيقتين';
+    if (n <= 10) return ar(n) + ' دقائق';
+    return ar(n) + ' دقيقة';
+  }
+  function showDial(){
+    var off = parseInt(dial.value, 10), t = FAJR + off;
+    var mm = t % 60;
+    dialTime.textContent = ar(Math.floor(t / 60)) + ':' + ar(mm < 10 ? '0' + mm : mm);
+    dialRel.textContent = off === 0 ? 'مع أذان الفجر'
+      : off < 0 ? 'قبل الفجر بـ' + minutes(-off)
+      : 'بعد الفجر بـ' + minutes(off) + '، وقبل الشروق بـ' + minutes(SUNRISE - t);
+    dial.setAttribute('aria-valuetext', dialTime.textContent + '، ' + dialRel.textContent);
+  }
+  dial.addEventListener('input', showDial); showDial();
+
+  // Fourteen moons, filling one morning at a time.
+  var moons = document.getElementById('moons'), count = document.getElementById('moonCount'), svgs = [];
+  for (var k = 1; k <= 14; k++){
+    var s = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    s.setAttribute('viewBox', '0 0 40 40');
+    s.innerHTML = '<circle cx="20" cy="20" r="17" fill="rgba(255,255,255,.09)"/><path fill="#ecc978" d="' + moonPath(k / 14, 20, 17) + '"/>';
+    moons.appendChild(s); svgs.push(s);
+  }
+  function days(n){
+    if (n === 1) return 'يوم واحد';
+    if (n === 2) return 'يومان متتاليان';
+    if (n <= 10) return ar(n) + ' أيام متتالية';
+    return ar(n) + ' يومًا متتاليًا';
+  }
+  function setMoons(n){
+    svgs.forEach(function(el, i){ el.classList.toggle('lit', i < n); el.classList.toggle('now', i === n - 1); });
+    count.textContent = n === 14 ? 'بدر: ' + days(n) : days(n);
+  }
+  var moonSeen = new IntersectionObserver(function(es){
+    if (!es[0].isIntersecting) return;
+    moonSeen.disconnect();
+    if (reduce){ setMoons(14); return; }
+    var n = 0; (function step(){ n++; setMoons(n); if (n < 14) setTimeout(step, 320); })();
+  }, {threshold:0.5});
+  moonSeen.observe(moons);
+})();
+</script>
+</body>
+</html>
