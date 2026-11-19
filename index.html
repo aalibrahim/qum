@@ -91,7 +91,7 @@
   <div class="wrap">
     <div class="center reveal">
       <h2>آية كل صباح، <em>تضيء بتلاوتك</em></h2>
-      <p class="intro">٤٣ آية ومقطعًا مختارًا، كلّها تحثّ على القيام، منها ١٥ في قيام الليل. جرّب هنا كيف يبدو ذلك؛ في التطبيق يضيئها صوتك أنت.</p>
+      <p class="intro">أكثر من ٥٠ آية ومقطعًا مختارًا، كلّها تحثّ على القيام، منها آيات لقيام الليل. جرّب هنا كيف يبدو ذلك؛ في التطبيق يضيئها صوتك أنت.</p>
     </div>
     <div class="versebox reveal">
       <p class="verse" id="verseLine" lang="ar"><!--VERSE--><span>أَقِمِ</span> <span>ٱلصَّلَوٰةَ</span> <span>لِدُلُوكِ</span> <span>ٱلشَّمْسِ</span> <span>إِلَىٰ</span> <span>غَسَقِ</span> <span>ٱلَّيْلِ</span> <span>وَقُرْءَانَ</span> <span>ٱلْفَجْرِ ۖ</span> <span>إِنَّ</span> <span>قُرْءَانَ</span> <span>ٱلْفَجْرِ</span> <span>كَانَ</span> <span>مَشْهُودًۭا</span><!--/VERSE--></p>
@@ -147,12 +147,12 @@
   <div class="wrap split">
     <div class="reveal">
       <h2>قمرٌ للفجر، <em>ونجومٌ لقيام الليل</em></h2>
-      <p class="intro">كل صباح تقوم فيه يزيد قمرك نورًا: هلال رقيق بعد اليوم الأول، وبدر كامل بعد أربعة عشر يومًا متتاليًا. ولكل ليلة قيام نجمة بجانب القمر. قيام الليل تطوّع، فليلةٌ تفوتك لا تقطع أيام الفجر المتتالية.</p>
+      <p class="intro">كل صباح تقوم فيه يزيد قمرك نورًا: هلال رقيق بعد اليوم الأول، وبدر كامل بعد أربعة عشر يومًا متتاليًا. ولكل ليلة قيام نجمة تتلألأ حول القمر. تبدأ السماء صافية، وليلةٌ تفوتك تُخفِت نجمة واحدة فقط. قيام الليل تطوّع، فلا يقطع فواتُه أيام الفجر المتتالية.</p>
       <div class="moons" id="moons" aria-hidden="true"></div>
       <p class="count center" id="moonCount">&nbsp;</p>
       <p class="stars center" id="stars7" aria-hidden="true"></p>
     </div>
-    <div class="phone reveal" style="width:min(16rem,70vw)"><img loading="lazy" src="assets/streak.webp" width="660" height="1435" alt="بطاقة المواظبة وفيها القمر وعدد الأيام المتتالية"></div>
+    <div class="phone reveal" style="width:min(16rem,70vw)"><img loading="lazy" src="assets/streak.webp" width="660" height="1435" alt="بطاقة المواظبة وفيها القمر تحيط به نجوم ليالي القيام، وعدد الأيام المتتالية"></div>
   </div>
 </section>
 
@@ -396,9 +396,9 @@
     svgs.forEach(function(el, i){ el.classList.toggle('lit', i < n); el.classList.toggle('now', i === n - 1); });
     count.textContent = n === 14 ? 'بدر: ' + days(n) : days(n);
   }
-  // Seven stars: one for each night of qiyam in the last week.
+  // A star for each night of qiyam in the last week; none to begin with.
   var stars7 = document.getElementById('stars7');
-  function setStars(n){ stars7.textContent = ''; for (var i = 0; i < 7; i++){ var st = document.createElement('span'); st.textContent = i < n ? '★' : '☆'; if (i < n) st.className = 'lit'; stars7.appendChild(st); } }
+  function setStars(n){ stars7.textContent = ''; for (var i = 0; i < n; i++){ var st = document.createElement('span'); st.textContent = '✦'; st.className = 'lit'; stars7.appendChild(st); } if (!n) stars7.innerHTML = '&nbsp;'; }
   setStars(0);
 
   // Thirds of an example night: Maghrib 5:38 pm to Fajr 5:14 am.
